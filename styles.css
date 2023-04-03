@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Norse Bold';
+    src: url('Norse-Bold.otf') format('opentype');
+  }
+.norse{
+    font-family: "Norse Bold";
+    font-size: 4rem;
+}
