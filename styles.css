@@ -2,7 +2,27 @@
     font-family: 'Norse Bold';
     src: url('Norse-Bold.otf') format('opentype');
   }
-.norse{
+/* .norse{
     font-family: "Norse Bold";
     font-size: 4rem;
+} */
+body, html{
+  margin: 0px;
+  height: 100%;
+} 
+.main{
+  display: flex;
+  height: 100%;
+}
+.left-side{
+  border: 1px solid;
+  background-color: violet;
+  width: 30%;
+  height: 100%;
+}
+.right-side{
+  border: 1px solid;
+  background-color: aqua;
+  width: 70%;
+  height: 100%;
 }
