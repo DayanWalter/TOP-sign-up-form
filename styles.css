@@ -30,7 +30,7 @@ body, html{
   width: 100%;
   top: 20%;
 }
-p{
+.logo-bar p{
   font-family: "Norse Bold";
   font-size: 5rem;
   color: white;
