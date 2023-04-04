@@ -2,11 +2,6 @@
     font-family: 'Norse Bold';
     src: url('Norse-Bold.otf') format('opentype');
   }
-p{
-    font-family: "Norse Bold";
-    font-size: 5rem;
-    color: white;
-}
 body, html{
   margin: 0px;
   height: 100%;
@@ -35,7 +30,11 @@ body, html{
   width: 100%;
   top: 20%;
 }
-
+p{
+  font-family: "Norse Bold";
+  font-size: 5rem;
+  color: white;
+}
 .logo{
   display: flex;
   justify-content: right;
