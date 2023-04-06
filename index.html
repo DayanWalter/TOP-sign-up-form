@@ -8,16 +8,10 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="main">
     <div class="left-side">
-            <div class="logo-bar">
-                <div class="logo">
-                    <img src="odin-lined.png" alt="odin-logo">
-                </div>
-                <p>Odin</p>
-            </div>
+        <img class="odin-img" src="odin-lined.png" alt="odin-logo">
+        <p>Odin</p>
     </div>
-
     <div class="right-side">
 
         <div class="header-section">
@@ -27,33 +21,36 @@
             You know you want to.
         </div>
         <div class="input-section">
-            <form action="#" method="get" id="form">
+            <form action="#" method="get" id="form" class="form">
+             <div class="form-row">
                 <label for="first-name">First Name</label>
                 <input type="text" id="first-name">
-                
+            </div>
+            <div class="form-row">
                 <label for="last-name">Last Name</label>
                 <input type="text" id="last-name">
-                
+            </div>
+            <div class="form-row">    
                 <label for="email">Email</label>
                 <input type="email" name="email" id="email">
-                
+            </div>
+            <div class="form-row">
                 <label for="phone-number">Phone Number</label>
                 <input type="tel" name="phone-number" id="phone-number">
-                
+            </div>
+            <div class="form-row">
                 <label for="password">Password</label>
                 <input type="password" name="password" id="password">
-                
+            </div>
+            <div class="form-row">
                 <label for="confirm-password">Confirm Password</label>
                 <input type="password" name="confirm-password" id="confirm-password">
+            </div>
             </form>
         </div>
         <div class="create-section">
             <button type="submit" form="form">Create Account</button>
             <p>Already have an account? <a href="#">Log in</a></p>
         </div>
-        </div>
-    </div>
-
-</div>
 </body>
 </html>
