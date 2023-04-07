@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'Norse Bold';
-    src: url('Norse-Bold.otf') format('opentype');
+  font-family: 'Norse Bold';
+  src: url('Norse-Bold.otf') format('opentype');
   }
 *{
   margin: 0;
@@ -8,14 +8,18 @@
   box-sizing: border-box;
 }
 body{
+  border: 3px solid red;
   display: flex;
 }
 .left-side{
- background-image: url(../img/background-image.jpg);
- background-size: cover;
- width: 40%;
-
+  border: 3px solid rgb(255, 230, 0);
+  background-image: url(../img/background-image.jpg);
+  background-size: cover;
+  height: 100vh;
+  height: 100svh;
+  width: 40%;
 }
 .right-side{
-width: 60%;
+  border: 3px solid rgb(0, 119, 255);
+  width: 60%;
 }
