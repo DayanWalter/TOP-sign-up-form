@@ -17,9 +17,17 @@ body{
   background-size: cover;
   height: 100vh;
   height: 100svh;
-  width: 40%;
+  width: 30%;
+  position: relative;
 }
 .right-side{
   border: 3px solid rgb(0, 119, 255);
-  width: 60%;
+  width: 70%;
+}
+.logo-bar{
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 125px;
+  width: 100%;
+  top: 25%;
 }
