@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Norse Bold';
+    src: url('Norse-Bold.otf') format('opentype');
+  }
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+}
+.left-side{
+ background-image: url(../img/background-image.jpg);
+ background-size: cover;
+ width: 40%;
+
+}
+.right-side{
+width: 60%;
+}
