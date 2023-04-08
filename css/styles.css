@@ -74,7 +74,7 @@ form{
   display: flex;
   flex-direction: column;
   padding: 10px;
-  max-width: 200px;
+  max-width: 300px;
 }
 .header-section p, .input-section p{
   font-family: Arial, Helvetica, sans-serif;
@@ -97,5 +97,21 @@ input{
 }
 input:focus{
   border: 1px solid blue;
-  box-shadow: 2px 2px rgb(216, 216, 216);
+  box-shadow: 2px 2px 10px rgb(216, 216, 216);
+}
+button{
+  padding: 10px 40px;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  border: 1px solid #E5E7EB;
+  box-shadow: 2px 2px 10px rgb(189, 189, 189);
+
+  border-radius: 10px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: #596D48;
+  color: #E5E7EB;
+}
+button:active{
+  background-color: #323d28;
+  transform: scale(0.98);
 }
