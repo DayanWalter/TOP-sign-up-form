@@ -47,18 +47,34 @@
                 </div>
                 <div class="form-row">
                     <label for="password">Password</label>
-                    <input type="password" name="password" id="password">
+                    <input type="password" name="password" id="password" oninput="checkPasswords()">
                 </div>
                 <div class="form-row">
                     <label for="confirm-password">Confirm Password</label>
-                    <input type="password" name="confirm-password" id="confirm-password">
+                    <input type="password" name="confirm-password" id="confirm-password" oninput="checkPasswords()">
                 </div>
             </form>
+            <p id="password-match"></p>
+
         </div>
         <div class="button-section">
-            <button type="submit" form="form">Create Account</button>
+            <button type="submit" form="form" >Create Account</button>
+            
             <p>Already have an account? <a href="#">Log in</a></p>
         </div>
     </div>
+    <script>
+        function checkPasswords() {
+  let password = document.getElementById("password").value;
+  let confirmPassword = document.getElementById("confirm-password").value;
+
+  if ( password != confirmPassword) {
+    document.getElementById("password-match").innerHTML = "Die Passwörter stimmen nicht überein.";
+  }else{
+    document.getElementById("password-match").innerHTML = "Die Passwörter stimmen überein.";
+
+  }
+}
+    </script>
 </body>
 </html>
