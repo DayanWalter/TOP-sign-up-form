@@ -89,11 +89,13 @@ input, label{
 }
 label{
   color: #525252;
+  margin-bottom: 10px;
 }
 input{
   font-size: 1.2rem;
   border: 1px solid #E5E7EB;
   border-radius: 3px;
+  min-height: 30px;
 }
 input:focus{
   outline: none;
@@ -121,5 +123,37 @@ button:active{
 a:visited, a:link{
   text-decoration: none;
   color: #323d28;
-  
+
+}
+@media only screen and (max-width: 1010px){
+  body{
+  border: 2px solid yellow;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+  .left-side{
+    width: 80%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #D6D9DC;
+
+  }
+  .right-side{
+    width: 80%;
+  }
+  form{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 1fr;
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 510px){
+  form{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr;
+    max-width: 100%;
+  }
 }
