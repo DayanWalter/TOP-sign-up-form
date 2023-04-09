@@ -47,11 +47,11 @@
                 </div>
                 <div class="form-row">
                     <label for="password">Password*</label>
-                    <input type="password" name="password" id="password" oninput="checkPasswords()" class="red" required>
+                    <input type="password" name="password" id="password" oninput="checkPasswords()" required>
                 </div>
                 <div class="form-row">
                     <label for="confirm-password">Confirm Password*</label>
-                    <input type="password" name="confirm-password" id="confirm-password" oninput="checkPasswords()" class="red" required>
+                    <input type="password" name="confirm-password" id="confirm-password" oninput="checkPasswords()" required>
                 </div>
             </form>
             <p>Required fields *</p>
@@ -59,23 +59,27 @@
 
         </div>
         <div class="button-section">
-            <button type="submit" form="form" >Create Account</button>
+            <button type="submit" form="form" id="submit-button">Create Account</button>
             
             <p>Already have an account? <a href="#">Log in</a></p>
         </div>
     </div>
     <script>
-        function checkPasswords() {
+function checkPasswords() {
   let password = document.getElementById("password").value;
   let confirmPassword = document.getElementById("confirm-password").value;
+  let button = document.getElementById("submit-button");
 
   if ( password != confirmPassword) {
     document.getElementById("password-match").innerHTML = "Passwords doesn't match";
+    button.disabled = true
   }else{
     document.getElementById("password-match").innerHTML = "Passwords match.";
+    button.disabled = false
 
+    }
   }
-}
+
     </script>
 </body>
 </html>
