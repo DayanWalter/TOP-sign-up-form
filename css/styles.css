@@ -123,7 +123,12 @@ button:active{
 a:visited, a:link{
   text-decoration: none;
   color: #323d28;
-
+}
+.red{
+  border: 1px solid red;
+}
+.green{
+  border: 1px solid green;
 }
 @media only screen and (max-width: 1010px){
   body{

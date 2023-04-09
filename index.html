@@ -31,27 +31,27 @@
             <form action="#" method="get" id="form">
                 <div class="form-row">
                     <label for="first-name">First Name*</label>
-                    <input type="text" id="first-name" required>
+                    <input type="text" id="first-name" placeholder="John" required>
                 </div>
                 <div class="form-row">
                     <label for="last-name">Last Name</label>
-                    <input type="text" id="last-name">
+                    <input type="text" id="last-name" placeholder="Doe">
                 </div>
                 <div class="form-row">
                     <label for="email">Email*</label>
-                    <input type="email" name="email" id="email" required>
+                    <input type="email" name="email" id="email" placeholder="johndoe@website.com" required>
                 </div>
                 <div class="form-row">
                     <label for="phone-number">Phone Number</label>
-                    <input type="tel" name="phone-number" id="phone-number">
+                    <input type="tel" name="phone-number" id="phone-number" placeholder="0432155464">
                 </div>
                 <div class="form-row">
                     <label for="password">Password*</label>
-                    <input type="password" name="password" id="password" oninput="checkPasswords()" required>
+                    <input type="password" name="password" id="password" oninput="checkPasswords()" class="red" required>
                 </div>
                 <div class="form-row">
                     <label for="confirm-password">Confirm Password*</label>
-                    <input type="password" name="confirm-password" id="confirm-password" oninput="checkPasswords()" required>
+                    <input type="password" name="confirm-password" id="confirm-password" oninput="checkPasswords()" class="red" required>
                 </div>
             </form>
             <p>Required fields *</p>
