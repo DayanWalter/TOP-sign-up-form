@@ -80,9 +80,12 @@ form{
   font-size: 1.2rem;
   font-weight: 600;
 }
-.required, #password-match{
+.required{
   font-family: Arial, Helvetica, sans-serif;
   color: red;
+}
+#password-match{
+  font-family: Arial, Helvetica, sans-serif;
 }
 input, label{
   font-family: Arial, Helvetica, sans-serif;
@@ -127,9 +130,17 @@ a:visited, a:link{
 }
 .red{
   border: 1px solid red;
+  color: red;
 }
 .green{
   border: 1px solid green;
+  color: green;
+}
+.invalidPassword{
+color: red;
+}
+.validPassword{
+color: green;
 }
 .invalidButton{
   background-color: #525252;
