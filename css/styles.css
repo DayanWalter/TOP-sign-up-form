@@ -8,7 +8,6 @@
   box-sizing: border-box;
 }
 body{
-  /* border: 3px solid red; */
   display: flex;
 }
 .left-side{
@@ -39,9 +38,7 @@ body{
   max-width: 80%;
   max-height: 80%;
 }
-
 .right-side{
-  /* border: 3px solid rgb(0, 119, 255); */
   width: 70%;
   display: flex;
   flex-direction: column;
@@ -73,16 +70,19 @@ form{
   max-width: 50%;
 }
 .form-row{
-  /* border: 1px solid red; */
   display: flex;
   flex-direction: column;
   padding: 10px;
   max-width: 300px;
 }
-.header-section p, .input-section p{
+.header-section p, .input-header{
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 600;
+}
+.required, #password-match{
+  font-family: Arial, Helvetica, sans-serif;
+  color: red;
 }
 input, label{
   font-family: Arial, Helvetica, sans-serif;
@@ -96,6 +96,7 @@ input{
   border: 1px solid #E5E7EB;
   border-radius: 3px;
   min-height: 30px;
+  padding: 5px;
 }
 input:focus{
   outline: none;
@@ -137,19 +138,19 @@ a:visited, a:link{
   background-color: #596D48;
 
 }
-@media only screen and (max-width: 1010px){
+@media only screen and (max-width: 1044px){
   body{
-  border: 2px solid yellow;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    border: 2px solid yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .left-side{
     width: 80%;
     border-radius: 5px;
     margin-bottom: 20px;
     border: 1px solid #D6D9DC;
-
+    height: 500px;
   }
   .right-side{
     width: 80%;
@@ -159,6 +160,12 @@ a:visited, a:link{
     grid-template-columns: 50% 50%;
     grid-template-rows: 1fr 1fr 1fr;
     max-width: 100%;
+  }
+  .button-section{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 @media only screen and (max-width: 510px){

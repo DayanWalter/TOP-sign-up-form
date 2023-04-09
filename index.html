@@ -26,7 +26,7 @@
             <p>You <em>know</em> you want to.</p>
         </div>
         <div class="input-section">
-            <p>Let's do this!</p>
+            <p class="input-header">Let's do this!</p>
             <br>
             <form action="#" method="get" id="form">
                 <div class="form-row">
@@ -39,7 +39,7 @@
                 </div>
                 <div class="form-row">
                     <label for="email">Email*</label>
-                    <input type="email" name="email" id="email" placeholder="johndoe@website.com" required>
+                    <input type="email" name="email" id="email" placeholder="j.doe@site.com" required>
                 </div>
                 <div class="form-row">
                     <label for="phone-number">Phone Number</label>
@@ -49,14 +49,14 @@
                     <label for="password">Password*</label>
                     <input type="password" name="password" id="password" oninput="checkPasswords()" required>
                 </div>
+                
                 <div class="form-row">
                     <label for="confirm-password">Confirm Password*</label>
                     <input type="password" name="confirm-password" id="confirm-password" oninput="checkPasswords()" required>
                 </div>
-            </form>
-            <p>Required fields *</p>
             <p id="password-match"></p>
-
+            </form>
+            <p class="required">Required fields *</p>
         </div>
         <div class="button-section">
             <button type="submit" form="form" id="submit-button">Create Account</button>
@@ -64,41 +64,6 @@
             <p>Already have an account? <a href="#">Log in</a></p>
         </div>
     </div>
-    <script>
-function checkPasswords() {
-  let password = document.getElementById("password").value;
-  let confirmPassword = document.getElementById("confirm-password").value;
-  let button = document.getElementById("submit-button");
-  let passwordInput = document.getElementById("password");
-  let confirmPasswordInput = document.getElementById("confirm-password");
-
-  if ( (password != confirmPassword ) || ( password || confirmPassword) === "") {
-    document.getElementById("password-match").innerHTML = "Passwords doesn't match";
-    button.disabled = true
-    passwordInput.classList.remove("green")
-    passwordInput.classList.add("red")
-
-    confirmPasswordInput.classList.remove("green")
-    confirmPasswordInput.classList.add("red")
-
-    button.classList.remove("validButton")
-    button.classList.add("invalidButton")
-
-  }else{
-    document.getElementById("password-match").innerHTML = "Passwords match.";
-    button.disabled = false
-    passwordInput.classList.remove("red")
-    passwordInput.classList.add("green")
-
-    confirmPasswordInput.classList.remove("red")
-    confirmPasswordInput.classList.add("green")
-
-    button.classList.remove("invalidButton")
-    button.classList.add("validButton")
-
-    }
-  }
-
-    </script>
+    <script src="../script/javascript.js"></script>
 </body>
 </html>
