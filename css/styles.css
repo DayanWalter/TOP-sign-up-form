@@ -130,6 +130,13 @@ a:visited, a:link{
 .green{
   border: 1px solid green;
 }
+.invalidButton{
+  background-color: #525252;
+}
+.validButton{
+  background-color: #596D48;
+
+}
 @media only screen and (max-width: 1010px){
   body{
   border: 2px solid yellow;
